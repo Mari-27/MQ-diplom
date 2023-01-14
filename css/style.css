@@ -1118,6 +1118,25 @@ body {
   display: none;
 }
 
+.popup-subtitle {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #0f0d0e;
+  padding: 50px 15px 28px;
+}
+.popup-subtitle::after {
+  content: "";
+  display: block;
+  background-color: #e1d9bd;
+  width: 66px;
+  height: 3px;
+  padding-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .popup::after {
   content: "";
   position: absolute;
@@ -1131,6 +1150,7 @@ body {
 
 .modal {
   width: 390px;
+  height: 590px;
   background-color: #ffffff;
   position: relative;
   z-index: 2;
@@ -1146,7 +1166,7 @@ body {
   height: 18px;
   background-size: 18px;
   position: absolute;
-  top: -26px;
+  top: -23px;
   right: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1161,18 +1181,14 @@ body {
   font-family: OpenSans-Regular, Arial, sans-serif;
   font-size: 13px;
   color: #a2a4a3;
-
   -webkit-appearance: none;
   -moz-appearance: none;
-
   background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-size: 9px 17px;
-
   padding-left: 20px;
   margin-top: 12px;
-
   cursor: pointer;
 }
 
@@ -1235,12 +1251,12 @@ option:checked {
   margin: 0;
 }
 
-.radio:checked~.radio_text::before {
+.radio:checked~.radio-text::before {
   background-image: url(../svg/form-circle.svg);
 }
 
 .form-row {
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
 .field {
@@ -1260,7 +1276,7 @@ option:checked {
   color: #a2a4a3;
 }
 
-.form-send {
+.form_send {
   margin-top: 25px;
 }
 
